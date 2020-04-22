@@ -345,16 +345,12 @@ footer{
   @media (max-width: 767px) {
     .social {
       text-align: center;
-      margin-bottom: 30px;
     }
 
     .social img {
       margin-left: 0px;
     }
 
-    p {
-      margin-bottom: 40px;
-    }
   }
 }
 
@@ -701,4 +697,68 @@ footer{
 .form-control:focus{
   border-color: #f8c246;
   box-shadow: 0 0 0 0.2rem rgba(248, 194, 70, 0.17);
+}
+
+
+@media (max-width: 1192px) {
+  .contact .message .content{
+    padding: 50px;
+  }
+  .contact .info .content {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  header .navbar-collapse {
+    padding-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .info,  .contact .message{
+    width: 100%;
+    float: none;
+    .content{
+      max-width: 100%;
+    }
+  }
+  .contact .info{
+    height: 380px;
+  }
+  .contact .message{
+    height: 430px;
+  }
+  footer .copyright {
+    margin-top: 0px;
+  }
+  .social{
+    margin-bottom: 0px;
+  }
+  .call-to-action h2 {
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .call-to-action .btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.item-banner .item h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 59px;
+  font-weight: 900;
+  margin-top: 0px;
+}
+
+@media (max-width: 420px) {
+
+  .item-banner .item h2{
+    margin-top: 0px;
+  }
 }

@@ -9,6 +9,7 @@ export default function Products({itens}) {
   const [selectedProduct, setSelectedProduct] = useState(null);
   
   function selectProduct(product){
+    window.scrollTo(0, 0);
     setSelectedProduct(product);
   }
   return (
