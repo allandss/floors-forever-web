@@ -4,14 +4,10 @@ import api from '../services/api';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import CallToAction from '../components/call-to-action';
+import Link from 'next/link';
 
 export default function Products({itens}) {
-  const [selectedProduct, setSelectedProduct] = useState(null);
   
-  function selectProduct(product){
-    window.scrollTo(0, 0);
-    setSelectedProduct(product);
-  }
   return (
     <>
       <Head>
@@ -31,42 +27,30 @@ export default function Products({itens}) {
         </div>
       </div>
       <div className="container products">
-        <h3>Our products</h3>
+        <h3>Products</h3>
         <div className="row">
           {itens.map((item, index) => (
-            <div className="col-md-4 item" key={index} onClick={()=>(selectProduct(item))}>          
-              <img className="img-fluid" src={item.image} alt=""/>
-              <h2>{item.name}</h2>
-              <p>{item.description}</p>
-            </div>
+            <Link href={`/product-details?id=${item._id}`} key={item._id}><a className="col-md-4">
+              <div className="item" key={index}>          
+                <img className="img-fluid" src={item.image} alt=""/>
+                <h2>{item.name}</h2>
+                <p>{item.description}</p>
+              </div>
+              </a>
+            </Link>
           ))}
         </div>
       </div>
       <CallToAction />
       <Footer />
-      {selectedProduct ? 
-      <div className="modal-product">
-        <div className="background"></div>
-        <div className="modal-body">
-          <div className="content">
-            <div className="close-modal" onClick={()=>(selectProduct(null))}>x</div>
-            <div className="item">
-              <img src={selectedProduct.image} alt=""/>
-              <div className="info">
-                <h2>{selectedProduct.name}</h2>
-                <p>{selectedProduct.description}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      : ''}
     </>
   )
 }
 
-Products.getInitialProps = async () => {
-  const response = await api.get('onlyreading');
+Products.getInitialProps = async ({query}) => {
+  console.log(query)
+  const { id } = query;
+  const response = await api.get(`products/category/${id}`);
 
   return {
     itens: response.data.products,

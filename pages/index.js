@@ -29,7 +29,7 @@ export default function Home({ itens }) {
       </div>
       <div className="products products-custom">
         <div className="container">
-          <h5>Our <span>products</span></h5>
+          <h5><span>Categories</span></h5>
           <div className="row">
             {itens.map((item, index) => (
               index <= 2 ?
@@ -41,7 +41,7 @@ export default function Home({ itens }) {
               : ''
             ))}
           </div>
-          <Link href="/products"><a className="btn">See All</a></Link>
+          <Link href="/categories"><a className="btn">See All</a></Link>
         </div>
       </div>
       <CallToAction />
