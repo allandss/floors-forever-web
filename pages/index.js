@@ -51,9 +51,9 @@ export default function Home({ itens }) {
 }
 
 Home.getInitialProps = async () => {
-  const response = await api.get('onlyreading');
+  const response = await api.get('categories');
 
   return {
-    itens: response.data.products,
+    itens: response.data.categories,
   };
 };
