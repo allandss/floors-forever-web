@@ -1,8 +1,29 @@
 import Head from 'next/head';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import { Form } from '@unform/web';
+import api from '../services/api';
+
+import Input from '../components/Input';
 
 export default function Home() {
+  function handleSubmit(data){
+    const { name, email, message } = data;
+  
+    if(!name || !email || !message){
+      alert('Erro - Inform required fields');
+    }else{
+      const response = api.post('/contact', {
+        name, 
+        email, 
+        message
+      }).then(function (response) {
+        alert('Message sent!');
+        window.location.reload();
+      })
+    }
+    
+  }
   return (
     <>
       <Head>
@@ -36,12 +57,12 @@ export default function Home() {
         <div className="message">
           <div className="content">
             <h4>Get In Touch</h4>
-            <form action="">
-              <input type="text" className="form-control name" placeholder="Your name" />
-              <input type="text" className="form-control email" placeholder="Your e-mail" />
-              <textarea className="form-control" placeholder="Your message"></textarea>
+            <Form onSubmit={handleSubmit}>
+              <Input name="name" type="text" className="form-control name" placeholder="Your name" />
+              <Input name="email" type="text" className="form-control email" placeholder="Your e-mail" />
+              <Input name="message" className="form-control" placeholder="Your message" multiline="true" />
               <button type="submit">Send Message</button>
-            </form>
+            </Form>
           </div>
         </div>
       </div>
