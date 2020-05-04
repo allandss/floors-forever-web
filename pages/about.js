@@ -31,7 +31,7 @@ export default function About() {
               <p>Our company is an operated full-service floor covering retailer. Whether you need carpet, hardwood, tile, laminate or custom rugs, you will find it here. Our staff is here to help you design the look you want and our team of installers will add the finishing touches to your flooring vision.</p>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-md-6">
               <h3>OUR MISSION</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -40,7 +40,7 @@ export default function About() {
               <h3>VISION</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <CallToAction />

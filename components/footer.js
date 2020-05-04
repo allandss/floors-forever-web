@@ -30,8 +30,8 @@ export default () => (
             <div className="content">
               <h4>Contact Information</h4>
               <ul>
-              <li><span>Call Now</span><p>(888) 555-999</p></li>
-              <li><span>Feel free to write us</span> <p>sales@floorsforever.com</p></li>
+              {/* <li><span>Call Now</span><p>(888) 555-999</p></li> */}
+              <li><span>Feel free to write us</span> <p>floorsforever@outlook.com</p></li>
               </ul>
             </div>
           </div>

@@ -7,7 +7,7 @@ import CallToAction from '../components/call-to-action';
 import Link from 'next/link';
 import serverFile from '../services/serverFile';
 
-export default function Products({itens}) {
+export default function Products({itens, name}) {
   
   return (
     <>
@@ -28,7 +28,7 @@ export default function Products({itens}) {
         </div>
       </div>
       <div className="container products">
-        <h3>Products</h3>
+        <h3>{name} Collection </h3>
         <div className="row">
           {itens.map((item, index) => (
             <Link href={`/product-details?id=${item._id}`} key={item._id}><a className="col-md-4">
@@ -52,8 +52,10 @@ Products.getInitialProps = async ({query}) => {
   console.log(query)
   const { id } = query;
   const response = await api.get(`products/serie/${id}`);
+  const nameCollection = await api.get(`serie/${id}`);
 
   return {
     itens: response.data.products,
+    name: nameCollection.data.serie.name
   };
 };
