@@ -5,6 +5,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import CallToAction from '../components/call-to-action';
 import Link from 'next/link';
+import serverFile from '../services/serverFile';
 
 export default function ProductsDetails({product}) {
   const [imagemSelected, setImagemSelected] = useState(product.image);
@@ -36,7 +37,7 @@ export default function ProductsDetails({product}) {
         <h3 class="mgB20">{product.name}</h3>
         <div className="row">
             <div className="col-md-4">          
-              <img className="img-fluid" src={imagemSelected} alt=""/>
+            <div className="img-item" style={{backgroundImage: `url(${serverFile+product.image})`}} alt="" />
             </div>
             <div className="col-md-6">
               <h6>Descrição</h6>
@@ -44,16 +45,7 @@ export default function ProductsDetails({product}) {
             
             </div>
         </div>
-        <div className="row">
-          <div className="col-md-12">
-          <h6>Colors</h6>
-          <div className="thumbs">
-            {product.colors.map(item => (
-              <img src={item.color} className="thumb-color" onClick={()=>{seletctImage(item)}}></img>
-            ))}
-            </div>
-          </div>
-        </div>
+
       </div>
       <CallToAction />
       <Footer />

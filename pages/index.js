@@ -35,7 +35,7 @@ export default function Home({ itens }) {
             {itens.map((item, index) => (
               index <= 2 ?
               <div className="col-md-4 item" key={index}>          
-                <img className="img-fluid" src={serverFile+item.image} alt=""/>
+                <div className="img-item" style={{backgroundImage: `url(${serverFile+item.image})`}} alt="" />
                 <h2>{item.name}</h2>
                 <p>{item.description}</p>
               </div>

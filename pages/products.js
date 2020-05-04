@@ -33,7 +33,7 @@ export default function Products({itens}) {
           {itens.map((item, index) => (
             <Link href={`/product-details?id=${item._id}`} key={item._id}><a className="col-md-4">
               <div className="item" key={index}>          
-                <img className="img-fluid" src={serverFile+item.image} alt=""/>
+              <div className="img-item" style={{backgroundImage: `url(${serverFile+item.image})`}} alt="" />
                 <h2>{item.name}</h2>
                 <p>{item.description}</p>
               </div>
