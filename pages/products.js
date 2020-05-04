@@ -5,6 +5,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import CallToAction from '../components/call-to-action';
 import Link from 'next/link';
+import serverFile from '../services/serverFile';
 
 export default function Products({itens}) {
   
@@ -32,7 +33,7 @@ export default function Products({itens}) {
           {itens.map((item, index) => (
             <Link href={`/product-details?id=${item._id}`} key={item._id}><a className="col-md-4">
               <div className="item" key={index}>          
-                <img className="img-fluid" src={item.image} alt=""/>
+                <img className="img-fluid" src={serverFile+item.image} alt=""/>
                 <h2>{item.name}</h2>
                 <p>{item.description}</p>
               </div>
@@ -50,7 +51,7 @@ export default function Products({itens}) {
 Products.getInitialProps = async ({query}) => {
   console.log(query)
   const { id } = query;
-  const response = await api.get(`products/category/${id}`);
+  const response = await api.get(`products/serie/${id}`);
 
   return {
     itens: response.data.products,

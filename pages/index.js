@@ -5,6 +5,7 @@ import Footer from '../components/footer';
 import Banner from '../components/banner';
 import CallToAction from '../components/call-to-action';
 import api from '../services/api';
+import serverFile from '../services/serverFile';
 
 export default function Home({ itens }) {
   return (
@@ -34,14 +35,14 @@ export default function Home({ itens }) {
             {itens.map((item, index) => (
               index <= 2 ?
               <div className="col-md-4 item" key={index}>          
-                <img className="img-fluid" src={item.image} alt=""/>
+                <img className="img-fluid" src={serverFile+item.image} alt=""/>
                 <h2>{item.name}</h2>
                 <p>{item.description}</p>
               </div>
               : ''
             ))}
           </div>
-          <Link href="/categories"><a className="btn">See All</a></Link>
+          <Link href="/categories"><a className="btn">Read more</a></Link>
         </div>
       </div>
       <CallToAction />

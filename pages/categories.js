@@ -5,6 +5,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import CallToAction from '../components/call-to-action';
 import Link from 'next/link';
+import serverFile from '../services/serverFile';
 
 export default function Categories({itens}) {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -24,7 +25,7 @@ export default function Categories({itens}) {
         <div className="container">
           <div className="row">
             <div className="col-6">
-              <h3>Categories</h3>
+              <h3>Collections</h3>
             </div>
             <div className="col-6">
             </div>
@@ -32,12 +33,12 @@ export default function Categories({itens}) {
         </div>
       </div>
       <div className="container products">
-        <h3>Categories</h3>
+        <h3>Collections</h3>
         <div className="row">
           {itens.map((item, index) => (
             <Link href={`/products?id=${item._id}`} key={item._id}><a className="col-md-4">
             <div className="item" key={index}>          
-              <img className="img-fluid" src={item.image} alt=""/>
+              <img className="img-fluid" src={serverFile+item.image} alt=""/>
               <h2>{item.name}</h2>
               <p>{item.description}</p>
             </div>
@@ -54,7 +55,7 @@ export default function Categories({itens}) {
           <div className="content">
             <div className="close-modal" onClick={()=>(selectProduct(null))}>x</div>
             <div className="item">
-              <img src={selectedProduct.image} alt=""/>
+              <img src={serverFile+selectedProduct.image} alt=""/>
               <div className="info">
                 <h2>{selectedProduct.name}</h2>
                 <p>{selectedProduct.description}</p>
@@ -69,9 +70,9 @@ export default function Categories({itens}) {
 }
 
 Categories.getInitialProps = async () => {
-  const response = await api.get('categories');
+  const response = await api.get('/serie');
 
   return {
-    itens: response.data.categories,
+    itens: response.data.series,
   };
 };
