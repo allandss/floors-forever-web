@@ -479,8 +479,8 @@ footer{
   }
   p{
     color: #6b6b6b;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 200;
   }
   img{
     width: 100%;
@@ -788,10 +788,10 @@ footer{
 
 .products-details h6{
   color: #f8c246;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .products-details{
@@ -821,4 +821,38 @@ button:focus{
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.img-item-custom{
+  height: 400px;
+}
+
+.spec{
+  h4{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+}
+
+.btn-warranty{
+  background: #21262b;
+  border-radius: 3px;
+  height: 54px;
+  display: block;
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 51px;
+  border: 0px;
+  color: #f8c246;
+  font-size: 18px;
+  box-shadow: 2px 5px 7px 2px rgba(219, 219, 219, 0.8);
+}
+
+.btn-warranty:hover{
+  background: #000;
+  color: #f8c145;
 }

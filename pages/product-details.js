@@ -6,6 +6,7 @@ import Footer from '../components/footer';
 import CallToAction from '../components/call-to-action';
 import Link from 'next/link';
 import serverFile from '../services/serverFile';
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
 export default function ProductsDetails({product}) {
   const [imagemSelected, setImagemSelected] = useState(product.image);
@@ -36,13 +37,15 @@ export default function ProductsDetails({product}) {
         
         <h3 class="mgB20">{product.name}</h3>
         <div className="row">
-            <div className="col-md-4">          
-            <div className="img-item" style={{backgroundImage: `url(${serverFile+product.image})`}} alt="" />
+            <div className="col-md-5">          
+              <div className="img-item img-item-custom" style={{backgroundImage: `url(${serverFile+product.image})`}} alt="" />
+              <a className="btn-warranty" href={product.warranty} target="_blank">Warranty</a>
             </div>
-            <div className="col-md-6">
-              <h6>Descrição</h6>
-              <p>{product.description}</p>
-            
+            <div className="col-md-7">
+              <h6>Product details</h6>
+              <div className="">
+              { ReactHtmlParser(product.description) }
+              </div>
             </div>
         </div>
 

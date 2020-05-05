@@ -40,7 +40,6 @@ export default function Categories({itens}) {
             <div className="item" key={index}>          
             <div className="img-item" style={{backgroundImage: `url(${serverFile+item.image})`}} alt="" />
               <h2>{item.name}</h2>
-              <p>{item.description}</p>
             </div>
             </a></Link>
           ))}
