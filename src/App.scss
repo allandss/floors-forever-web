@@ -856,3 +856,20 @@ button:focus{
   background: #000;
   color: #f8c145;
 }
+
+table.spec{
+  font-size: 15px;
+  font-weight: 100;
+  thead{
+    th{
+      padding: 7px 10px;
+      border-top: 1px solid #f7f7f7;
+      border-bottom: 1px solid #f7f7f7;
+    }
+  }
+  td{
+    padding: 7px 10px;
+    border-top: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
+  }
+}
