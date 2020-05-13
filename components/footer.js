@@ -7,7 +7,7 @@ export default () => (
       <div className="row">
         <div className="col-md-3">
           <img src="/static/logo-white.png" alt="Logo" className="img-fluid logo-footer" />
-          <p>Our company is an operated full-service floor covering retailer. Whether you need carpet, hardwood, tile, laminate or custom rugs, you will find it here.</p>
+          <p>Floors Forever was founded with the purpose of making flooring purchase experience simple and easy. </p>
         </div>
         
         <div className="col-md-3">
@@ -48,6 +48,13 @@ export default () => (
       <div className="container">
         <p>Copyright © Floors Forever, All Rights Reserved - 2020</p>
       </div>
+    </div>
+    <div className="call-us">
+      <Link href="/contact">
+      <button>
+        <span><img src="/static/icons/phone.svg" alt=""/> <b>Call Us</b></span><p>Book an Appointment!</p>
+      </button>
+      </Link>
     </div>
     <script crossOrigin="anonymous" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" />
     <script crossOrigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" />

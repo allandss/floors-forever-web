@@ -22,7 +22,9 @@ export default function Home({ itens }) {
             <div className="col-md-12">
               <h6>Who We Are</h6>
               <h2>Few words about company</h2>
-              <p>Our company is an operated full-service floor covering retailer. Whether you need carpet, hardwood, tile, laminate or custom rugs, you will find it here. Our staff is here to help you design the look you want and our team of installers will add the finishing touches to your flooring vision.</p>
+              <p>Floors Forever was founded with the purpose of making flooring purchase experience simple and easy. 
+              We are totally committed in providing our customers the best service possible in every step of the way. 
+              We strive for excellence in all we do and always have a passion for flooring.</p>
               <Link href="/about"><a className="read-more">Read more</a></Link>
             </div>
           </div>
