@@ -36,11 +36,11 @@ export default function Home({ itens }) {
           <div className="row">
             {itens.map((item, index) => (
               index <= 2 ?
-              <Link href={`/categories?id=${item._id}`} key={item._id}>
+              <Link href={`/category?id=${item._id}`} key={item._id}>
               <div className="col-md-4 item" key={index}>          
                 <div className="img-item" style={{backgroundImage: `url(${serverFile+item.image})`}} alt="" />
                 <h2>{item.name}</h2>
-                <p>{item.description}</p>
+                {/* <p>{item.description}</p> */}
               </div>
               </Link>
               : ''

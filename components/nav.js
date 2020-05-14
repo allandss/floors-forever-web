@@ -11,8 +11,11 @@ export default props => {
         <Link activeClassName="active" href="/about">
           <a><li className="nav-item">About</li></a>
         </Link>
-        <Link activeClassName="active" href="/categories">
+        <Link activeClassName="active" href="/collections">
           <a><li className="nav-item">Products</li></a>
+        </Link>
+        <Link activeClassName="active" href="/photos">
+          <a><li className="nav-item">Photo Gallery</li></a>
         </Link>
         <Link activeClassName="active" href="/contact">
           <a><li className="nav-item">Contact</li></a>

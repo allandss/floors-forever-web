@@ -7,7 +7,7 @@ import CallToAction from '../components/call-to-action';
 import Link from 'next/link';
 import serverFile from '../services/serverFile';
 
-export default function Categories({itens}) {
+export default function Collections({itens}) {
   const [selectedProduct, setSelectedProduct] = useState(null);
   
   function selectProduct(product){
@@ -25,7 +25,7 @@ export default function Categories({itens}) {
         <div className="container">
           <div className="row">
             <div className="col-6">
-              <h3>Categories</h3>
+              <h3>Collections</h3>
             </div>
             <div className="col-6">
             </div>
@@ -33,10 +33,10 @@ export default function Categories({itens}) {
         </div>
       </div>
       <div className="container products">
-        <h3>Categories</h3>
+        <h3>Collections</h3>
         <div className="row">
           {itens.map((item, index) => (
-            <Link href={`/category?id=${item._id}`} key={item._id}><a className="col-md-4">
+            <Link href={`/products?id=${item._id}`} key={item._id}><a className="col-md-4">
             <div className="item" key={index}>          
             <div className="img-item" style={{backgroundImage: `url(${serverFile+item.image})`}} alt="" />
               <h2>{item.name}</h2>
@@ -68,10 +68,10 @@ export default function Categories({itens}) {
   )
 }
 
-Categories.getInitialProps = async () => {
-  const response = await api.get('/categories');
+Collections.getInitialProps = async () => {
+  const response = await api.get('/serie');
 
   return {
-    itens: response.data.categories,
+    itens: response.data.series,
   };
 };
