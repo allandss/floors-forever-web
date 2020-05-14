@@ -36,7 +36,7 @@ export default function Category({itens, name}) {
         { itens.length === 0 ? <h4 className="coming-soon">Coming Soon</h4> : <h3>Collections</h3>}
         <div className="row">
           {itens.map((item, index) => (
-            <Link href={`/collections?id=${item._id}`} key={item._id}><a className="col-md-4">
+            <Link href={`/products?id=${item._id}`} key={item._id}><a className="col-md-4">
             <div className="item" key={index}>          
             <div className="img-item" style={{backgroundImage: `url(${serverFile+item.image})`}} alt="" />
               <h2>{item.name}</h2>
