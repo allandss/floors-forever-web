@@ -30,7 +30,7 @@ export default () => (
             <div className="content">
               <h4>Contact Information</h4>
               <ul>
-              <li><span>Call Now</span><p>+1 (407)9609437 <br/> +1 (407) 791-1098</p></li>
+              <li><span>Call Now</span><p>+1 (407) 960-9437 <br/> +1 (407) 791-1098</p></li>
               <li><span>Feel free to write us</span> <p>floorsforever@outlook.com</p></li>
               </ul>
             </div>
