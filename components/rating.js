@@ -21,7 +21,7 @@ export default function Rating() {
               <div className="col-12">
                 <img src="/static/user2.jpg" alt=""/>
                 <p>Jessica Minola, NYC</p>
-                <h2>We would highly recommend Mahogany to anyone: We have used for both buying flooring and also installing the floor. They were excellent on both counts. The technician who installed the floor was great.</h2>
+                <h2>We would highly recommend Floors Forever to anyone: We have used for both buying flooring and also installing the floor. They were excellent on both counts. The technician who installed the floor was great.</h2>
               </div>
             </div>
           </div>
