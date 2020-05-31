@@ -25,7 +25,7 @@ export default function Collections({itens}) {
         <div className="container">
           <div className="row">
             <div className="col-6">
-              <h3>Collections</h3>
+              <h3>Products</h3>
             </div>
             <div className="col-6">
             </div>
@@ -33,7 +33,7 @@ export default function Collections({itens}) {
         </div>
       </div>
       <div className="container products">
-        <h3>Collections</h3>
+        <h3>Styles</h3>
         <div className="row">
           {itens.map((item, index) => (
             <Link href={`/products?id=${item._id}`} key={item._id}><a className="col-md-4">

@@ -14,6 +14,9 @@ export default props => {
         <Link activeClassName="active" href="/collections">
           <a><li className="nav-item">Products</li></a>
         </Link>
+        <Link activeClassName="active" href="/financing">
+          <a><li className="nav-item">Financing</li></a>
+        </Link>
         <Link activeClassName="active" href="/photos">
           <a><li className="nav-item">Photo Gallery</li></a>
         </Link>

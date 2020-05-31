@@ -7,7 +7,7 @@ export default () => (
       <div className="row">
         <div className="col-md-3">
           <img src="/static/logo-white.png" alt="Logo" className="img-fluid logo-footer" />
-          <p>Floors Forever was founded with the purpose of making flooring purchase experience simple and easy. </p>
+          <p>Floors Forever was founded with the purpose of making the flooring purchase experience simple and easy.</p>
         </div>
         
         <div className="col-md-3">
@@ -30,17 +30,24 @@ export default () => (
             <div className="content">
               <h4>Contact Information</h4>
               <ul>
-              <li><span>Call Now</span><p>+1 (407) 960-9437 <br/> +1 (407) 791-1098</p></li>
-              <li><span>Feel free to write us</span> <p>floorsforever@outlook.com</p></li>
+              <li><span>Call Now</span><p><a href="tel:4079609437">+1 (407) 960-9437</a> <br/><a href="tel:4077911098"> +1 (407) 791-1098</a></p></li>
+              <li><span>Feel free to write us</span> <p><a href="mailto:floorsforever@outlook.com">floorsforever@outlook.com</a></p></li>
               </ul>
             </div>
           </div>
         </div>
         
-        <div className="col-md-3 social">
+        <div className="col-md-2 social">
           <h4>Social media</h4>
           <p><img src="/static/icons/instagram.svg" alt="" /></p>
           <p><img src="/static/icons/facebook.svg" alt="" /></p>
+        </div>
+        <div className="col-md-1">
+          <div className="home-advisor">
+            <a href="https://www.homeadvisor.com/rated.FloorsForever.98375831.html" target="_blank">
+              <img src="/static/home-advisor.png" alt="" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -33,7 +33,7 @@ export default function Photos({itens}) {
         </div>
       </div>
       <div className="container products">
-        <h3 className="title-gallery">See Latest <span>Works</span></h3>
+        <h3 className="title-gallery">See Latest <span>Work</span></h3>
         <div className="row">
           {itens.map((item, index) => (
             <div className="col-md-4" onClick={()=>(selectProduct(item))}>

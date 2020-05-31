@@ -48,8 +48,8 @@ export default function Home() {
           <div className="content">
             <h4><span>Find us</span>Contact Information</h4>
             <ul>
-              <li><div className="icon"><img src="/static/icons/phone.svg" alt=""/></div><span>Call Now</span><p>+1 (407) 960-9437 / +1 (407) 791-1098</p></li>
-              <li><div className="icon"><img src="/static/icons/mail.svg" alt=""/></div><span>Feel free to write us</span> <p>floorsforever@outlook.com</p></li>
+              <li><div className="icon"><img src="/static/icons/phone.svg" alt=""/></div><span>Call Now</span><p><a href="tel:4079609437">+1 (407) 960-9437</a> <a href="tel:4077911098"> +1 (407) 791-1098</a></p></li>
+              <li><div className="icon"><img src="/static/icons/mail.svg" alt=""/></div><span>Feel free to write us</span> <p><a href="mailto:floorsforever@outlook.com">floorsforever@outlook.com</a></p></li>
               <li><div className="icon"><img src="/static/icons/place.svg" alt=""/></div><span>Orlando</span> <p>USA</p></li>
             </ul>
           </div>
