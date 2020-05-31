@@ -40,7 +40,7 @@ export default function Financing() {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <h2>Get 6 – 12 Months Special Financing*</h2>
+                <h2>Get 6 – 24 Months Special Financing*</h2>
                 <h5>on all in-store purchases</h5>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function Financing() {
                   <li>Make payments</li>
                   <li>View your balance</li>
                   <li>Update account info</li>
-                  <li>Schedule up to your next 12 payments</li>
+                  <li>Schedule up to your next 24 payments</li>
                   <li>And more</li>
                 </ul>
               </div>
@@ -110,7 +110,7 @@ export default function Financing() {
                         <li>Make a payment</li>
                         <li>View your balance</li>
                         <li>Update your account information</li>
-                        <li>Schedule up to your next 12 payments</li>
+                        <li>Schedule up to your next 24 payments</li>
                       </ul>
                       </Card.Body>
                     </Accordion.Collapse>
