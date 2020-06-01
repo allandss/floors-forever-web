@@ -31,7 +31,7 @@ export default function Financing() {
             </div>
             <div className="col-md-7">
               <h2>The flooring of you dreams just became more affordable!*</h2>
-              <p>with an Integrity Laminate Flooring Credit Card.<br />Apply in store or online today!</p>
+              <p>with an Credit Card.<br />Apply in store or online today!</p>
               <a className="btn" href="https://www.mysynchrony.com/apply-for-home-credit-card.html" target="_blank">Apply now</a>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function Financing() {
               <div className="col-md-4">
                 <h2>Apply In Store or Online</h2>
                 <ul>
-                  <li>A dedicated credit line to use again and again at Integrity Laminate Flooring.</li>
+                  <li>A dedicated credit line to use again and again.</li>
                   <li>Convenient monthly payments.</li>
                   <li>Payment options – online or by mail.</li>
                 </ul>
@@ -85,18 +85,18 @@ export default function Financing() {
                 <Accordion defaultActiveKey="0">
                   <Card>
                     <Accordion.Toggle as={Card.Header} eventKey="0">
-                      What is the Integrity Laminate Flooring Credit Card?
+                      What is the Credit Card?
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="0">
-                      <Card.Body>Integrity Laminate Flooring offers customers a credit card through Synchrony Bank with a revolving credit line to use again and again at Integrity Laminate Flooring locations.*</Card.Body>
+                      <Card.Body>Offers customers a credit card through Synchrony Bank with a revolving credit line to use again and again at locations.*</Card.Body>
                     </Accordion.Collapse>
                   </Card>
                   <Card>
                     <Accordion.Toggle as={Card.Header} eventKey="1">
-                    How do I get an Integrity Laminate Flooring Credit Card?
+                    How do I get an Credit Card?
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="1">
-                      <Card.Body>You can apply for an Integrity Laminate Flooring Credit Card* at any of our conventional locations or <a href="https://www.mysynchrony.com/mysyf/apply-for-home-credit-card.html" target="_blank">apply online</a></Card.Body>
+                      <Card.Body>You can apply for an Credit Card* at any of our conventional locations or <a href="https://www.mysynchrony.com/mysyf/apply-for-home-credit-card.html" target="_blank">apply online</a></Card.Body>
                     </Accordion.Collapse>
                   </Card>
                   <Card>
@@ -105,7 +105,7 @@ export default function Financing() {
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="2">
                       <Card.Body>
-                      <p>To check the status of your Integrity Laminate Flooring Credit Card, click on the Manage My Account link above to go to Synchrony Financial’s website. After logging into your account, you will be able to:</p>
+                      <p>To check the status of your Credit Card, click on the Manage My Account link above to go to Synchrony Financial’s website. After logging into your account, you will be able to:</p>
                       <ul>
                         <li>Make a payment</li>
                         <li>View your balance</li>
@@ -117,11 +117,11 @@ export default function Financing() {
                   </Card>
                   <Card>
                     <Accordion.Toggle as={Card.Header} eventKey="3">
-                    How can I make a payment on my Integrity Laminate Flooring Credit Card?
+                    How can I make a payment on my Credit Card?
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="3">
                       <Card.Body>
-                      <p>Integrity Laminate Flooring offers three convenient ways to pay your credit card bill.</p>
+                      <p>Offers three convenient ways to pay your credit card bill.</p>
                       <ul>
                         <li><b>Pay Online: </b><a href="https://www.mysynchrony.com/" target="_blank">Click here</a> to manage your account and make payments online.</li>
                         <li><b>Pay by Phone:</b> Contact Synchrony Bank Customer Service at 1-866-396-8254 during the hours listed below to make a payment by phone.<br />
