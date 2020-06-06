@@ -19,9 +19,8 @@ export default function Rating() {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <img src="/static/user2.jpg" alt=""/>
-                <p>Jessica Minola, NYC</p>
-                <h2>We would highly recommend Floors Forever to anyone: We have used for both buying flooring and also installing the floor. They were excellent on both counts. The technician who installed the floor was great.</h2>
+                <p>Anthony W. - Tavares, FL</p>
+                <h2>They were very professional and on time.They have quality customer service and are a fantastic company. The crew that they sent was very good.</h2>
               </div>
             </div>
           </div>
@@ -30,9 +29,18 @@ export default function Rating() {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <img src="/static/user1.jpg" alt=""/>
-                <p>Lila Estrada, NYC</p>
-                <h2>You are professionals. Just wanted to pass on to the workman and the projects department that we are very pleased with the job that was done at our house. Many Thanks. We will recommend you to our friends.</h2>
+                <p>Carmen D. - Orlando, FL</p>
+                <h2>He was very professional, very kind and goes the extra mile to satisfy the customer.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="item-banner">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p>Ryan L. - West Melbourne, FL</p>
+                <h2>Very friendly and quick to the finish.Great work and quality!</h2>
               </div>
             </div>
           </div>
