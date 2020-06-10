@@ -39,7 +39,7 @@ export default function Photos({itens}) {
             <div className="col-md-4" onClick={()=>(selectProduct(item))}>
               <div className="item photo-gallery" key={index}>          
                 <div className="img-item" style={{backgroundImage: `url(${serverFile+item.image})`}} alt="" />
-                <h2>{item.name}</h2>
+                {/* <h2>{item.name}</h2> */}
               </div>
             </div>
           ))}
