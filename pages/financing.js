@@ -41,7 +41,7 @@ export default function Financing() {
             <div className="row">
               <div className="col-md-12">
                 <h2>Get 6 – 24 Months Special Financing*</h2>
-                <h5>on all in-store purchases</h5>
+                {/* <h5>on all in-store purchases</h5> */}
               </div>
             </div>
           </div>

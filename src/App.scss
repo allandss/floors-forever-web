@@ -1036,8 +1036,9 @@ table.spec{
   left: 20px;
   top: 240px;
   font-size: 20px;
-  color: #f8c246;
-  font-weight: 300;
+  color: #ffffff;
+  font-weight: 800;
+  border-bottom: 2px solid #f8c245;
 }
 
 .home-advisor{
@@ -1161,4 +1162,11 @@ table.spec{
     font-size: 13px;
   }
 
+}
+
+.accredited{
+  img{
+    width: 180px;
+    margin-top: 20px;
+  }
 }

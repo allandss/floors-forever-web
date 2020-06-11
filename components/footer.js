@@ -48,6 +48,11 @@ export default () => (
               <img src="/static/home-advisor.png" alt="" />
             </a>
           </div>
+          <div className="accredited">
+            <a href="#">
+              <img src="/static/accredited-logo.png" alt=""/>
+            </a>
+          </div>
         </div>
       </div>
     </div>
