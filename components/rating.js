@@ -45,6 +45,46 @@ export default function Rating() {
             </div>
           </div>
         </div>
+        <div className="item-banner">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p>Ruth H. - Mims, FL</p>
+                <h2>Jose, who came to our home, was knowledgeable, accommodating, and COVID19 cautions. Alexander, who installed the flooring, was efficient and meticulous. I would recommend this company in a heartbeat!!!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="item-banner">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p>Casey M. - Orlando, FL</p>
+                <h2>Great experience with the company - from the sales rep to the office manager and installers. Very pleased.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="item-banner">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p>Kay C. - Lakeland, FL</p>
+                <h2>The owner has impeccable professionalism and is very committed to providing a great experience!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="item-banner">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p>Tiffanie K.</p>
+                <h2>They have great customer service and are very knowledgeable. They are also efficient and provided quality work.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </Slider>
     </div>
     );
