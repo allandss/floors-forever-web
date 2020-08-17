@@ -85,6 +85,49 @@ export default function Rating() {
             </div>
           </div>
         </div>
+
+        <div className="item-banner">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p>Leonard D. - PALM BAY, FL</p>
+                <h2>Great service.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="item-banner">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p>Lynda S. - The Villages, FL</p>
+                <h2>I needed to have LVP installed in my home quickly. Jose quickly
+called me and offered to install the plank purchased elsewhere. Later learned
+that the product bought elsewhere was lesser quality and more expensive than
+Floors Forever product and installation. Jose arranged for an all inclusive
+price using a thicker higher quality LVP and saved me several hundred dollars.
+The install team were very professional and cared greatly about the quality of
+their work. Jose kept in close contact with me throughout the whole project
+and the entire team demonstrated excellent customer service. If you want quality
+flooring quickly, affordably and installed meticulously, then Floors Forever should
+be your 1st call.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="item-banner">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p>Jenny P. - Longwood, FL</p>
+                <h2>I was first a little worried about using a company that l had never
+heard of but they were nothing but professional and just plain awesome from the very
+beginning to the end. We are so excited and love our floors and would definitely
+recommend Floors Forever to any and everyone.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </Slider>
     </div>
     );
