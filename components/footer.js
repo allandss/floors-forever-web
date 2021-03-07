@@ -55,7 +55,7 @@ export default () => (
               <div className="content">
                 <h4>Contact Information</h4>
                 <ul>
-                <li><span>Call Now</span><p><a href="tel:4079609437">+1 (407) 960-9437</a> <br/><a href="tel:4077911098"> +1 (407) 791-1098</a></p></li>
+                <li><span>Call Now</span><p><a href="tel:4072718476">+1 (407) 271-8476</a> <br/><a href="tel:4075769693"> +1 (407) 576-9693</a></p></li>
                 <li><span>Feel free to write us</span> <p><a href="mailto:floorsforever@outlook.com">floorsforever@outlook.com</a></p></li>
                 </ul>
               </div>
