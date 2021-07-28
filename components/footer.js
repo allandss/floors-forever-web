@@ -70,11 +70,11 @@ export default () => (
           <div className="col-md-2">
            <div className="row">
              <div className="col-6">
-              <div className="accredited">
+              {/* <div className="accredited">
                 <a href="#">
                   <img src="/static/accredited-logo.png" className="img-fluid"/>
                 </a>
-              </div>
+              </div> */}
              </div>
              <div className="col-6">
               <div className="home-advisor">
